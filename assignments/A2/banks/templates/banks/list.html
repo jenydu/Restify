@@ -1,0 +1,8 @@
+{% block content %}
+    <h1>All Banks</h1>
+    <ul>
+        {% for bank in banks %}
+            <li>{{ bank.id }}: {{ bank.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

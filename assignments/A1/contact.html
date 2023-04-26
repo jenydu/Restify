@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSC309 A1 - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <!-- TODO: complete me -->
+  
+    <header class="headerbar">
+      <a class="button_top" href="./index.html">Home</a>
+      <a class="button_top" href="./about.html">About</a>
+      <a class="button_top_curr" href="#">Contact</a>
+    </header>
+  <main>
+  <div id="content-wrap">
+    <p class="vertical_space"></p>
+    
+    <img src="portrait.jpg" alt="A photo of Jenny.">
+    <h1>Jenny Du</h1>
+    <a class="email" href="mailto:junni.du@mail.utoronto.ca?subject=Bug&nbsp;Found&body=I&nbsp;found&nbsp;the&nbsp;following&nbsp;bug&nbsp;on&nbsp;your&nbsp;website">junni.du@mail.utoronto.ca</a>
+    
+    
+    <form action="https://csc309.teach.cs.toronto.edu/a1/submit/" method="POST">
+      <div class="grid-container">
+        <div class="grid-item1">
+          <label>Your Email:</label>
+        </div>
+        <div class="grid-item2">
+          <input type="text" name="email" required>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-item1">
+          <label>Feedback:</label>
+          </div>
+          <div class="grid-item2">
+          <textarea placeholder="Enter your feedback here" name="feedback" required></textarea>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-item1">
+          <label>Attachment:</label>
+          </div>
+          <div class="grid-item2">
+          <input type="file" name="attachments" required>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item1">
+          <input type="checkbox" name="consent" required>
+        </div>
+        <div class="grid-item2">
+          <div id="consent">You agree to receive emails from me</div>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item1"></div>
+        <div class="grid-item2">
+          <div id="submit_button">
+          <input type="submit" value="Send Feedback" class="button_content"></div>
+        </div>
+      </div>
+
+    </form>
+    
+      
+    <p class="vertical_space"></p>
+  </div>
+  </main>
+    <footer class="footerbar">
+      <p class="footer_text">Copyright 2023 by dujun1.</p>
+    </footer>
+
+</body>
+
+</html>
