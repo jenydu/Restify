@@ -1,0 +1,280 @@
+/*
+ * style.css
+ *
+ * CSC309 Assignment 1
+ * Winter 2023
+ *
+ */
+
+body {
+    background-color: #D48166;
+    margin: 0rem;
+    padding: 0rem;
+    position: relative;
+    min-height: 100vh;
+    font-family: sans-serif;
+    place-content: center;
+}
+
+main {
+    text-align: left;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+
+
+h1,
+h2,
+label {
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
+}
+
+h2,
+label {
+    font-size: 1.5rem;
+
+}
+
+
+
+.state-1,
+.state-2,
+.state-3,
+.state-4,
+.state-5,
+.state-6,
+.state-7 {
+    border-radius: 3px;
+    color: #FFF;
+    line-height: 3rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: none;
+
+}
+
+.state-1 {
+    /* pending */
+    background-color: #ffa343;
+}
+
+.state-2 {
+    /* denied */
+    background-color: #fc2847;
+}
+
+.state-3 {
+    /* expired */
+    background-color: #0f4c81;
+}
+
+.state-4 {
+    /* approved */
+    background-color: #71bc78;
+}
+
+.state-5 {
+    /* canceled */
+    background-color: #7442c8;
+}
+
+.state-6 {
+    /* terminated */
+    background-color: #fb7efd;
+}
+
+.state-7 {
+    /* completed */
+    background-color: #BEBEBE;
+}
+
+
+input {
+    color: #373A36;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.5rem;
+    font-size: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    margin-bottom: 1rem;
+    ;
+}
+
+.button_top {
+    color: #E6E2DD;
+    font-weight: normal;
+    display: flex;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.vertical_space {
+    margin-bottom: 5rem;
+    padding: 0;
+}
+
+.grid-container {
+    display: flex;
+    width: 100%;
+    place-content: center;
+    border: 0px solid black;
+    padding: 0rem 0rem 1rem 0rem;
+
+}
+
+
+.grid-item1 {
+    float: left;
+    flex: 70%;
+    max-width: 700px;
+    text-align: left;
+    padding: 0rem;
+    border: 0px solid black;
+
+}
+
+img {
+    border-radius: 2%;
+    max-width: 100%;
+    margin: 0;
+    border: 0px solid #373A36;
+}
+
+.thumbnail {
+    width: 150px;
+    height: auto;
+}
+
+
+.pfp {
+    border-radius: 50%;
+    width: 3rem;
+
+}
+
+.pfp_text {
+    display: inline-block;
+    padding-left: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #373A36;
+    font-weight: bold;
+}
+
+.button1 {
+    text-align: center;
+    color: #D48166;
+    width: auto;
+    padding: 0.5rem 1.5rem;
+    background: #FFFFFF;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: auto;
+    justify-content: center;
+    margin-top: 1rem;
+    ;
+}
+
+.button1:hover {
+    background: #373A36;
+    color: #FFFFFF;
+}
+
+i {
+    padding: 0 0.1rem;
+    ;
+}
+
+.btn-primary {
+    background-color: #373A36 !important;
+    border: none !important;
+    margin: 0rem;
+    margin-right: 0.5rem;
+    min-width: 6rem;
+}
+
+.btn-primary:hover {
+    background-color: #D48166 !important;
+    border-color: #D48166 !important;
+}
+
+.card {
+    min-width: 300px;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    margin: 0rem;
+    display: inline-block;
+}
+
+.card_img {
+    float: left;
+    flex: 30%;
+    max-width: 400px;
+    ;
+    text-align: left;
+
+    border: 0px solid black;
+}
+
+.card-body-1 {
+    float: left;
+    flex: 70%;
+    text-align: left;
+    padding: 1rem;
+    overflow: hidden;
+    border: 0px solid black;
+    color: black;
+}
+
+.card-text {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+textarea {
+    width: 100%;
+    margin-top: -2rem;
+}
+
+@media only screen and (max-width:700px) {
+    img {
+        border-radius: 2%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .card_img {
+        float: left;
+        flex: 100%;
+        max-width: 100%;
+        text-align: left;
+
+        border: 0px solid black;
+    }
+
+    .grid-container {
+        display: inline-block;
+    }
+
+}

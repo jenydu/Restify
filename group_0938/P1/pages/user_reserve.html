@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Make a reservation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/user_reserve.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        img {
+            object-fit: contain;
+            max-width: 100%;
+        }
+
+        #profile-pic {
+            background-image: url("../assets/flag.jpeg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar bg-primary navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand button_top" href="./index.html"><i class="fa fa-plane"
+                    aria-hidden="true"></i>Restify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="background-color: #E6E2DD;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./my_rental_units.html">My Rental Units</a>
+                    </li>
+
+                </ul>
+                <div class="dropdown">
+                    <a role="button" data-bs-toggle="dropdown" aria-expanded="false"><svg id="bell"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            style="color:aliceblue; margin: 0 0.5rem" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                        </svg></a>
+                    <ul class="dropdown-menu dropdown-menu-lg-end notifications-expand" style="min-width:30vw">
+                        <div class="dropdown-item d-flex"><img class="img-fluid img-thumbnail thumbnail"
+                                src="../assets/property_img1.jpg">
+                            <div class="d-flex flex-column justify-content-center text-center" style="min-width:0">
+                                <h6>1 This Street</h6>
+                                <p style="white-space:break-spaces"> Your reservation has been confirmed</p>
+                            </div>
+                            <a href="./property_info.html" class="stretched-link"></a>
+                        </div>
+                        <div class="dropdown-item d-flex"><img class="img-fluid img-thumbnail thumbnail"
+                                src="../assets/property_img2.jpg">
+                            <div class="d-flex flex-column justify-content-center text-center" style="min-width:0">
+                                <h6 style="text-overflow: ellipsis;">3932 Eglinton Avenue</h6>
+                                <p style="white-space:break-spaces"> A user would like to make a reservation</p>
+                            </div>
+                        </div>
+                    </ul>
+
+
+                </div>
+
+                <div class="dropdown">
+                    <div class="btn-group">
+
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-lg-end notifications-expand">
+                            <li><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-bottom:1rem;"></div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" style="margin-bottom: 2rem">
+            <div class="column">
+                <h2>Make a reservation · Restify</h2>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Your stay</h3>
+        </div>
+        <form class="row">
+            <div class="col-md-4">
+                <label for="exampleInputPassword1" class="form-label">Arrive Date</label>
+                <input type="date" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="col-md-4">
+                <label for="exampleInputPassword1" class="form-label">Depart Date</label>
+                <input type="date" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="col-md-4">
+                <label for="exampleInputPassword1" class="form-label">Number of Guests</label>
+                <input type="number" class="form-control" id="exampleInputPassword1">
+            </div>
+        </form>
+        <div class="row" style="margin-top: 20px;">
+            <h4>Property information</h4>
+        </div>
+        <div class="container">
+            <div class="row justify-content-left mb-4">
+                <div class="card" style="width:100%">
+                    <img src="../assets/property_img1.jpg" alt="...">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <h4 class="card-title">911 Emergency Blvd</h4>
+                            </div>
+                            <div class="row">
+                                <p class="rt">Rating: 4.99 · <a href="./property_info.html#review">255</a> reviews ·
+                                    Toronto, Ontario, Canada</p>
+                            </div>
+                            <div class="row">
+                                <h4>Price</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col" style="text-align: left;">
+                                    <p>$100 per night</p>
+                                </div>
+                                <div class="col" style="text-align: right;">
+                                    <p>$200 USD</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" style="text-align: left;">
+                                    <p>Cleaning fee</p>
+                                </div>
+                                <div class="col" style="text-align: right;">
+                                    <p>$50 USD</p>
+                                </div>
+                            </div>
+                            <div class="row"
+                                style="border-bottom-style: groove; border-width: 0.5px; padding-bottom: 1px; margin-bottom: 10px;">
+                                <div class="col" style="text-align: left;">
+                                    <p>Service fee</p>
+                                </div>
+                                <div class="col" style="text-align: right;">
+                                    <p>$30 USD</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" style="text-align: left;">
+                                    <p>Total price</p>
+                                </div>
+                                <div class="col" style="text-align: right;">
+                                    <p>$280 USD</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Checkout</h4>
+        </div>
+        <form>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name on the card</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cnum">Card Number</label>
+                    <input type="tel" class="form-control" id="cnum" placeholder="0000 0000 0000 0000"
+                        inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="exp">Expiry Date</label>
+                    <input type="text" class="form-control" id="exp" placeholder="MM/YY" size="6" minlength="5"
+                        maxlength="5">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="CVV" size="1" maxlength="3"
+                        minlength="3">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2 mb-4">Checkout</button>
+        </form>
+    </div>
+
+
+    <footer class="footerbar">
+        <p class="footer_text">&copy; 2023 Restify.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+.heading{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color:white !important;
+}
+
+.card {
+    flex-direction: row;
+    margin: 0.5rem;
+}
+
+.PENDING,
+.DENIED,
+.EXPIRED,
+.APPROVED,
+.CANCELED,
+.TERMINATED,
+.COMPLETED,
+.PENDING-CANCELLATION {
+    border-radius: 3px;
+    color: #FFF;
+    line-height: 2rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: none;
+    height: 2rem;
+    /* width: 15rem; */
+    font-weight: bold;
+    box-sizing: border-box;
+    display: flex; /* enable flexbox layout */
+    justify-content: center; /* horizontally center the content */
+    align-items: center; /* vertically center the content */
+}
+
+.PENDING {
+    /* pending */
+    background-color: #ffa343;
+}
+.DENIED {
+    /* denied */
+    background-color: #fc2847;
+}
+.EXPIRED {
+    /* expired */
+    background-color: #0f4c81;
+}
+.APPROVED {
+    /* approved */
+    background-color: #71bc78;
+}
+.PENDING-CANCELLATION  {
+    /* approved */
+    background-color: #63c5da;
+}
+.CANCELED {
+    /* canceled */
+    background-color: #7442c8;
+}
+.TERMINATED {
+    /* terminated */
+    background-color: #fb7efd;
+}
+.COMPLETED {
+    /* completed */
+    background-color: #BEBEBE;
+}
+
+.card-text {
+    margin:0;
+}
+
+.filter-bar {
+    text-align: center;
+}
+
+button {
+    line-height: 2rem;
+    margin: 0.25rem 0.5rem 0.25rem 0rem !important;
+    border: none;
+    height: 2rem;
+    width: 5rem;
+    font-weight: bold;
+    color: #D48166;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px !important;
+}
+
+button:hover {
+    background: #373A36;
+    color: #FFFFFF;
+}
+
+button.clicked {
+    background: #373A36;
+    color: #FFFFFF;
+}
+
+.hidden {
+    visibility: hidden;
+  }
+
+.clear-all:hover{
+    background: #373A36;
+    color: #FFFFFF !important;
+}
+
+.removed {
+    display:none;
+  }
+
+.action-button {
+    border-radius: 3px;
+    background: #D48166;
+    color: #FFF;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: none;
+    height: 2.5rem;
+    width: 15rem;
+    font-size: large;
+    box-sizing: border-box;
+
+    justify-content: center; /* horizontally center the content */
+    align-items: center; /* vertically center the content */
+}
+.action-button:hover{
+    background: #373A36;
+}
+
+.warning-msg{
+    color: #e3242b;
+    text-align: center;
+}
+
+.cancel-btn{
+    background:  #373A36;
+    color: #FFF;
+}
+.cancel-btn:hover{
+    color: #D48166;
+}

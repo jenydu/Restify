@@ -1,0 +1,31 @@
+.card {
+    flex-direction: row;
+}
+
+.card img {
+    width: 40%;
+}
+
+img {
+    object-fit: contain;
+}
+
+@media (max-width: 576px) {
+    .card {
+        flex-direction: column;
+
+    }
+
+    .card img {
+        width: auto;
+    }
+}
+
+
+
+
+/* @media screen and (max-width: 992px) {
+    #bell {
+        margin: 0 0 16px 0 !important;
+    }
+  } */

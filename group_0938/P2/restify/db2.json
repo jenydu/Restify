@@ -1,0 +1,410 @@
+[
+    {
+        "model": "properties.property",
+        "pk": 1,
+        "fields": {
+            "city": "Brampton",
+            "province": "Ontario",
+            "country": "Canada",
+            "guests_cap": 8,
+            "owner": 1,
+            "beds": 4,
+            "baths": 4,
+            "unit_num": 2,
+            "street": "This Street",
+            "desc": "a very nice place"
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 2,
+        "fields": {
+            "city": "Burlington",
+            "province": "Ontario",
+            "country": "Canada",
+            "guests_cap": 8,
+            "owner": 1,
+            "beds": 4,
+            "baths": 4,
+            "unit_num": 3,
+            "street": "Random Road",
+            "desc": "a stony place"
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 3,
+        "fields": {
+            "city": "Pickering",
+            "province": "Ontario",
+            "country": "Canada",
+            "guests_cap": 8,
+            "owner": 1,
+            "beds": 4,
+            "baths": 4,
+            "unit_num": 3,
+            "street": "That Blvd",
+            "desc": "a stony place"
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 4,
+        "fields": {
+            "city": "London",
+            "province": "Ontario",
+            "country": "Canada",
+            "guests_cap": 2,
+            "owner": 2,
+            "beds": 6,
+            "baths": 5,
+            "unit_num": 6,
+            "street": "That Street",
+            "desc": "a mushroom filled place"
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 5,
+        "fields": {
+            "city": "Pickering",
+            "province": "Ontario",
+            "country": "Canada",
+            "guests_cap": 8,
+            "owner": 4,
+            "beds": 4,
+            "baths": 4,
+            "unit_num": 3,
+            "street": "That Blvd",
+            "desc": "a stony place"
+        }
+    },
+    {
+        "model": "properties.availability",
+        "pk": 1,
+        "fields": {
+            "arrive_date": "2023-07-01",
+            "depart_date": "2023-08-01",
+            "total_price": 500,
+            "prop": 1
+        }
+    },
+    {
+        "model": "properties.availability",
+        "pk": 2,
+        "fields": {
+            "arrive_date": "2023-08-01",
+            "depart_date": "2023-09-01",
+            "total_price": 100,
+            "prop": 2
+        }
+    },
+    {
+        "model": "properties.availability",
+        "pk": 3,
+        "fields": {
+            "arrive_date": "2023-10-01",
+            "depart_date": "2023-11-01",
+            "total_price": 100,
+            "prop": 2
+        }
+    },
+    {
+        "model": "properties.availability",
+        "pk": 4,
+        "fields": {
+            "arrive_date": "2023-10-01",
+            "depart_date": "2023-12-01",
+            "total_price": 1001,
+            "prop": 3
+        }
+    },
+    {
+        "model": "properties.availability",
+        "pk": 5,
+        "fields": {
+            "arrive_date": "2023-01-01",
+            "depart_date": "2023-12-01",
+            "total_price": 40000,
+            "prop": 4
+        }
+    },
+    {
+        "model": "properties.amenity",
+        "pk": 1,
+        "fields": {
+            "amenity": "Fireplace",
+            "prop": 1
+        }
+    },
+    {
+        "model": "properties.amenity",
+        "pk": 2,
+        "fields": {
+            "amenity": "Sauna",
+            "prop": 1
+        }
+    },
+    {
+        "model": "properties.amenity",
+        "pk": 3,
+        "fields": {
+            "amenity": "Tv",
+            "prop": 2
+        }
+    },
+    {
+        "model": "properties.amenity",
+        "pk": 4,
+        "fields": {
+            "amenity": "Tub",
+            "prop": 3
+        }
+    },
+    {
+        "model": "properties.amenity",
+        "pk": 5,
+        "fields": {
+            "amenity": "Sauna",
+            "prop": 3
+        }
+    },
+    {
+        "model": "properties.amenity",
+        "pk": 6,
+        "fields": {
+            "amenity": "Tub",
+            "prop": 4
+        }
+    },
+    {
+        "model": "properties.amenity",
+        "pk": 7,
+        "fields": {
+            "amenity": "Sauna",
+            "prop": 4
+        }
+    },
+    {
+        "model": "properties.pictures",
+        "pk": 1,
+        "fields": {
+            "picture": "Screenshot_from_2021-09-13_23-41-46_cuwRa6b.png",
+            "prop": 1
+        }
+    },
+    {
+        "model": "properties.pictures",
+        "pk": 2,
+        "fields": {
+            "picture": "Screenshot_from_2021-03-14_23-03-55_lEB5IXH.png",
+            "prop": 1
+        }
+    },
+    {
+        "model": "properties.pictures",
+        "pk": 3,
+        "fields": {
+            "picture": "Screenshot_from_2021-09-13_23-41-46_YG7bxTb.png",
+            "prop": 2
+        }
+    },
+    {
+        "model": "properties.pictures",
+        "pk": 4,
+        "fields": {
+            "picture": "Screenshot_from_2021-03-14_23-03-55_M22N5Sc.png",
+            "prop": 2
+        }
+    },
+    {
+        "model": "properties.pictures",
+        "pk": 5,
+        "fields": {
+            "picture": "Screenshot_from_2021-09-13_23-41-46_iAm1XOG.png",
+            "prop": 3
+        }
+    },
+    {
+        "model": "properties.pictures",
+        "pk": 6,
+        "fields": {
+            "picture": "Screenshot_from_2021-03-14_23-03-55_ooAgjIG.png",
+            "prop": 3
+        }
+    },
+    {
+        "model": "properties.pictures",
+        "pk": 7,
+        "fields": {
+            "picture": "Screenshot_from_2021-09-13_23-41-46_KMosQ2c.png",
+            "prop": 4
+        }
+    },
+    {
+        "model": "properties.pictures",
+        "pk": 8,
+        "fields": {
+            "picture": "Screenshot_from_2021-03-14_23-03-55_1HBAnWB.png",
+            "prop": 4
+        }
+    },
+    {
+        "model": "user.user",
+        "pk": 1,
+        "fields": {
+            "last_login": null,
+            "is_superuser": false,
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-03-14T03:07:54.124Z",
+            "username": "another@one.com",
+            "first_name": "jack",
+            "last_name": "sun",
+            "password": "pbkdf2_sha256$390000$QJKvWMVrjloSRBBFhGFUyQ$HU6BKPqPwYM8aJ5vRHH9ul7HtfN1wQQzvZsBAdMVyM0=",
+            "phone": "+16478710621",
+            "profile_pic": "Screenshot_from_2021-09-13_23-41-46_PmJulaA.png",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.user",
+        "pk": 2,
+        "fields": {
+            "last_login": null,
+            "is_superuser": false,
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-03-14T03:13:48.721Z",
+            "username": "some@email.com",
+            "first_name": "jack",
+            "last_name": "sun",
+            "password": "pbkdf2_sha256$390000$PjFmX13FxfMQbHXCk8GoQQ$ZeRBgxPqk7eAXJIQUblYO938+ALOjCMM2l940KdY4aQ=",
+            "phone": "+16478710622",
+            "profile_pic": "Screenshot_from_2021-09-13_23-41-46_xIlWwqc.png",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.user",
+        "pk": 3,
+        "fields": {
+            "last_login": null,
+            "is_superuser": false,
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-03-14T03:13:48.721Z",
+            "username": "test3@email.com",
+            "first_name": "jack",
+            "last_name": "sun",
+            "password": "pbkdf2_sha256$390000$PjFmX13FxfMQbHXCk8GoQQ$ZeRBgxPqk7eAXJIQUblYO938+ALOjCMM2l940KdY4aQ=",
+            "phone": "+16478710627",
+            "profile_pic": "Screenshot_from_2021-09-13_23-41-46_xIlWwqc.png",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.user",
+        "pk": 4,
+        "fields": {
+            "last_login": null,
+            "is_superuser": false,
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-03-14T03:13:48.721Z",
+            "username": "user4@email.com",
+            "first_name": "jack",
+            "last_name": "sun",
+            "password": "pbkdf2_sha256$390000$PjFmX13FxfMQbHXCk8GoQQ$ZeRBgxPqk7eAXJIQUblYO938+ALOjCMM2l940KdY4aQ=",
+            "phone": "+16478710626",
+            "profile_pic": "Screenshot_from_2021-09-13_23-41-46_xIlWwqc.png",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "reservations.reservation",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "host": 1,
+            "property": 1,
+            "start_date": "2023-07-01",
+            "end_date": "2023-08-01",
+            "previous_state": "Pd",
+            "state": "Cm"
+        }
+    },
+    {
+        "model": "reservations.reservation",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "host": 2,
+            "property": 4,
+            "start_date": "2024-01-01",
+            "end_date": "2024-12-01",
+            "previous_state": "Pd",
+            "state": "Ap"
+        }
+    },
+    {
+        "model": "reservations.reservation",
+        "pk": 3,
+        "fields": {
+            "user": 2,
+            "host": 1,
+            "property": 2,
+            "start_date": "2024-10-01",
+            "end_date": "2024-11-01",
+            "previous_state": "Pd",
+            "state": "Ap"
+        }
+    },
+    {
+        "model": "reservations.reservation",
+        "pk": 4,
+        "fields": {
+            "user": 1,
+            "host": 2,
+            "property": 2,
+            "start_date": "2024-08-01",
+            "end_date": "2024-09-01",
+            "previous_state": "Ap",
+            "state": "Pc"
+        }
+    },
+    {
+        "model": "reservations.reservation",
+        "pk": 5,
+        "fields": {
+            "user": 3,
+            "host": 4,
+            "property": 3,
+            "start_date": "2024-08-01",
+            "end_date": "2024-09-01",
+            "previous_state": "Ap",
+            "state": "Pc"
+        }
+    },
+    {
+        "model": "reservations.reservation",
+        "pk": 6,
+        "fields": {
+            "user": 3,
+            "host": 4,
+            "property": 3,
+            "start_date": "2024-08-01",
+            "end_date": "2024-09-01",
+            "previous_state": "Ap",
+            "state": "Cm"
+        }
+    }
+]

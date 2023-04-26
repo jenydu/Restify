@@ -1,0 +1,90 @@
+/* global styling settings that applies to ALL pages */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #D48166 !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.root {
+  height: 100%;
+  margin: 0;
+  color: white;
+}
+
+.footerbar {
+  background: #333333;
+  text-align: center;
+  position: absolute;
+  height: 2rem;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+}
+
+.footer_text {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #FFFFFF;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color:white;
+}
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.button_top {
+  color: #E6E2DD;
+  font-weight: normal;
+  display: flex;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-dark {
+  background-color: #373A36;
+}
+
+.btn-light {
+  background-color: #E6E2DD;
+}
+
+.notications {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.thumbnail {
+  flex-shrink: 1;
+  max-width: 100%;
+  height: 20vh;
+  object-fit: cover;
+}
+
+.card-body {
+  color: black
+}

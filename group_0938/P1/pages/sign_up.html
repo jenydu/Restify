@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <title>Sign Up- Restify</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/user_profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <nav class="navbar bg-primary navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand button_top" href="./index.html"><i class="fa fa-plane" aria-hidden="true"></i>Restify</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="vertical_space"></div>
+
+    <div class="grid-container">
+      <h1>Sign Up</h1>
+    </div>
+    <form action="https://csc309.teach.cs.toronto.edu/a1/submit/" method="POST">
+      <div class="grid-container">
+
+        <div class="grid-item1">
+          <label>First Name:</label>
+          <input type="text" placeholder="John" required>
+          <label>Last Name:</label>
+          <input type="text" placeholder="Doe" required>
+          <label>Email Address:</label>
+          <small id="emailHelp" class="form-text text-muted">This will also be your username for future log-ins.</small>
+          <input type="text" placeholder="john.doe@gmail.com" required>
+
+          <label>Password:</label>
+          <input type="password" required>
+          <label>Phone Number:</label>
+          <input type="text" placeholder="(123) 456-7890">
+          <label for="img" class="mb-4">Upload Profile Picture</label>
+          <input type="file" id="img" name="img" accept="image/*" />
+          <label for="save" class="button1">Sign Up</label>
+          <input type="submit" id="save" hidden />
+        </div>
+      </div>
+    </form>
+
+  </main>
+  <footer class="footerbar">
+    <p class="footer_text">&copy; 2023 Restify.</p>
+  </footer>
+</body>
+
+</html>

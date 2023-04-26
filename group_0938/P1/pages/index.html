@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Restify - Your Stay, Your Way</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar bg-primary navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand button_top" href="#"><i class="fa fa-plane" aria-hidden="true"></i>Restify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="background-color: #E6E2DD;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./my_rental_units.html">My Rental Units</a>
+                    </li>
+
+                </ul>
+                <div class="dropdown">
+                    <a role="button" data-bs-toggle="dropdown" aria-expanded="false"><svg id="bell"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            style="color:aliceblue; margin: 0 0.5rem" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                        </svg></a>
+                    <ul class="dropdown-menu dropdown-menu-lg-end notifications-expand" style="min-width:30vw">
+                        <div class="dropdown-item d-flex"><img class="img-fluid img-thumbnail thumbnail"
+                                src="../assets/property_img1.jpg">
+                            <div class="d-flex flex-column justify-content-center text-center" style="min-width:0">
+                                <h6>1 This Street</h6>
+                                <p style="white-space:break-spaces"> Your reservation has been confirmed</p>
+                            </div>
+                            <a href="./property_info.html" class="stretched-link"></a>
+                        </div>
+                        <div class="dropdown-item d-flex"><img class="img-fluid img-thumbnail thumbnail"
+                                src="../assets/property_img2.jpg">
+                            <div class="d-flex flex-column justify-content-center text-center" style="min-width:0">
+                                <h6 style="text-overflow: ellipsis;">3932 Eglinton Avenue</h6>
+                                <p style="white-space:break-spaces"> A user would like to make a reservation</p>
+                            </div>
+                        </div>
+                    </ul>
+
+
+                </div>
+
+                <div class="dropdown">
+                    <div class="btn-group">
+
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-lg-end notifications-expand">
+                            <li><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-bottom:1rem;"></div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <h4>Find your stay</h4>
+        <form class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12">
+                <label for="exampleInputEmail1" class="form-label">Location</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="col-12">
+                <label for="exampleInputPassword1" class="form-label">Arrive Date</label>
+                <input type="date" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="col-12">
+                <label for="exampleInputPassword1" class="form-label">Depart Date</label>
+                <input type="date" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="col-12">
+                <label for="exampleInputPassword1" class="form-label">Number of Guests</label>
+                <input type="number" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="col-12">
+                <label for="exampleInputPassword1" class="form-label">Amenities</label>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Wifi
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    A/C
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Heating
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Kitchen
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Dryer
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Washer
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        View all
+                    </button>
+
+
+
+                </div>
+            </div>
+            <div class="container">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#sort">
+                    Sort By
+                </button>
+                <button type="submit" class="btn btn-dark">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h1>Places</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="../assets/property_img1.jpg" class="card-img-top" alt="../assets/flag.jpeg">
+                    <div class="card-body">
+                        <h5 class="City">1 Some Street</h5>
+                        <h6> 4/5 rating (2 reviews)</h6>
+                        <p>Excellent house with cozy interior</p>
+                        <div class="row">
+                            <div class="col" style="text-align: left;">
+                                <p>$50/night</p>
+                            </div>
+                            <div class="col" style="text-align: right;">
+                                <p>Total: $100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./property_info.html" class="stretched-link"></a>
+                </div>
+
+
+            </div>
+            <div class="col">
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="../assets/property_img2.jpg" class="card-img-top" alt="../assets/flag.jpeg">
+                    <div class="card-body">
+                        <h5 class="card-title">3924 Eglington Avenue</h5>
+                        <p class="card-text">A cozy cabin in a serene forest for a nice get away</p>
+                        <div class="row">
+                            <div class="col" style="text-align: left;">
+                                <p>$75/night</p>
+                            </div>
+                            <div class="col" style="text-align: right;">
+                                <p>Total: $150</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="../assets/property_img3.jpg" class="card-img-top" alt="../assets/flag.jpeg">
+                    <div class="card-body">
+                        <h5 class="card-title">1935 Davis Drive</h5>
+                        <p class="card-text">A nice place to rest</p>
+                        <div class="row">
+                            <div class="col" style="text-align: left;">
+                                <p>$100/night</p>
+                            </div>
+                            <div class="col" style="text-align: right;">
+                                <p>Total: $200</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Amenities</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Wifi
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        A/C
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Heating
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Kitchen
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Dryer
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Washer
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Sauna
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Hot tub
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Home Gym
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Bed Sheets
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Fireplace
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Carpet
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sort" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sort Results</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Sort By
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Price
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Rating
+                        </label>
+                    </div>
+                    In
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="direction" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Increasing
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="direction" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Decreasing
+                        </label>
+                    </div>
+                    order
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footerbar">
+        <p class="footer_text">&copy; 2023 Restify.</p>
+    </footer>
+
+</body>
+
+</html>
